@@ -1,0 +1,11 @@
+message = input()
+new = {}
+for i in range(len(message)):
+    if message[i] != " ":
+        key = message[i]
+        value = 1
+        if key not in new:
+            new[key] = 0
+        new[key] += value
+for key, value in new.items():
+    print(f"{key} -> {value}")
