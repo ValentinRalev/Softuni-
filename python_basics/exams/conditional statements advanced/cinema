@@ -1,0 +1,11 @@
+type_project = input()
+row = int(input())
+column = int(input())
+sum = 0
+if type_project == "Premiere":
+    sum = 12.00 * (row * column)
+elif type_project == "Normal":
+    sum = 7.50 * (row * column)
+elif type_project == "Discount":
+    sum = 5.00 * (row * column)
+print(f"{sum:.2f}")
