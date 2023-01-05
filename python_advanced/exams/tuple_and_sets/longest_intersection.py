@@ -7,9 +7,9 @@ for _ in range(number):
     second_start, second_end = [int(y) for y in second.split(",")]
     first_set = set()
     second_set = set()
-    for nums in range(first_start, first_end +1):
+    for nums in range(first_start, first_end + 1):
         first_set.add(nums)
-    for nums in range(second_start, second_end +1):
+    for nums in range(second_start, second_end + 1):
         second_set.add(nums)
     res = first_set.intersection(second_set)
     if longest_len < len(res):

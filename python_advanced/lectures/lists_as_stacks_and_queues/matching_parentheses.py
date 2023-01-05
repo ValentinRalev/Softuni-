@@ -1,9 +1,9 @@
 string_line = input()
 
-parenthes = []
+parentheses_list = []
 
 for index in range(len(string_line)):
     if string_line[index] == "(":
-        parenthes.append(index)
+        parentheses_list.append(index)
     if string_line[index] == ")":
-        print(string_line[parenthes.pop():index +1])
+        print(string_line[parentheses_list.pop():index + 1])

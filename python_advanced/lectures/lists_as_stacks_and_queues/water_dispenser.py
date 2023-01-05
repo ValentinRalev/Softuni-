@@ -1,4 +1,4 @@
-from collections import  deque
+from collections import deque
 quantity = int(input())
 name = input()
 water_people = deque()

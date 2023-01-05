@@ -14,6 +14,7 @@ while command != "End":
     line.append(command)
     command = input()
 
+
 def convert_second_time(seconds):
     seconds %= 24 * 60 * 60
     hours = seconds // (60 * 60)
@@ -21,7 +22,6 @@ def convert_second_time(seconds):
     minutes = seconds // 60
     seconds %= 60
     return "%02i:%02i:%02i" % (hours, minutes, seconds)
-
 
 
 while line:

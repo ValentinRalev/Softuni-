@@ -11,4 +11,3 @@ for key, avg in student_grades.items():
     for k in avg:
         print(f"{k:.2f}", end=" ")
     print(f"(avg: {(sum(avg) / len(avg)):.2f})")
-
